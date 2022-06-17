@@ -1,17 +1,17 @@
-    # Python-website-blocker
+ # Python-website-blocker
 
 import time
 from datetime import datetime as dt
 
-    #Windows host file path
+  #Windows host file path
 hostsPath=r"C:\Windows\System32\drivers\etc\hosts"
 redirect="127.0.0.1"
 
-    #Add the website you want to block, in this list
+  #Add the website you want to block, in this list
 websites=["www.youtube.com","youtube.com", "www.facebook.com", "facebook.com"]
 while True:
 
-    #Duration during which, website blocker will work
+  #Duration during which, website blocker will work
    if dt(dt.now().year,dt.now().month,dt.now().day,9) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,18):
    print ("Sorry Not Allowed...")
    with open(hostsPath,'r+') as file:
